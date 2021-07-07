@@ -37,47 +37,40 @@ body nav .my-container {
   position: relative;
 }
 
-body nav .my-container .swiper-container {
-  width: 100%;
-  height: 100%;
+body nav .my-container .cover {
+  width: calc(100vw - 1297px);
+  height: 856px;
+  background-image: url(image/building.jpg);
+  background-size: cover;
+  background-position: right 35% bottom 45%;
+  background-repeat: no-repeat;
 }
 
-body nav .my-container .swiper-container .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+body nav .my-container .video {
+  width: 1297px;
+  height: 856px;
+  position: relative;
 }
 
-body nav .my-container .swiper-container .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-body nav .my-container .swiper-container .swiper-container {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body nav .my-container .swiper-container .swiper-button-next,
-body nav .my-container .swiper-container .swiper-button-prev {
-  color: white;
-}
-
-body nav .my-container .swiper-container .tagline {
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 600;
-  letter-spacing: 10px;
-  text-shadow: 0.1em 0.1em 0.2em #333;
-  color: white;
+body nav .my-container .video .mask {
+  width: 1297px;
+  height: 856px;
+  background-image: url(image/video-mask.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
   position: absolute;
-  top: calc(100vh - 65%);
-  left: calc(100vw - 64%);
-  padding: 20px 30px;
-  z-index: 10;
+  right: 0px;
+  top: 0px;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+body nav .my-container .video iframe {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -99;
 }
 
 body nav .my-container .nav-bg {
@@ -1807,4 +1800,4 @@ body .copyright {
     width: 95%;
   }
 }
-/*# sourceMappingURL=bistro-style.css.map */
+/*# sourceMappingURL=bistro-1.css.map */
