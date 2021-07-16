@@ -37,7 +37,7 @@
 
             <!-- Nav -->
             <div id="main" class="nav-bg">
-                <a href="index.htm">
+                <a href="index-1.html">
                     <div class="logo"></div>
                 </a>
                 <div class="menu">
@@ -400,7 +400,29 @@
             <!-- Swiper -->
             <div class="swiper-container Events-Swiper">
                 <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
                 <div class="swiper-wrapper">
+
+                    <div class="swiper-slide card">
+                        <a href="https://www.facebook.com/bistro88light/posts/1904853083024180" target="_blank">
+                            <div class="post-date">
+                                <div class="date">18</div>
+                                <div class="month">Jun</div>
+                                <div class="year">2021</div>
+                            </div>
+                            <div class="event-img"><img src="image/event-07.jpg"></div>
+                            <div class="event-txt">
+                                <div class="title">
+                                    限量餐盒、與「食」俱進
+                                </div>
+                                <div class="content">
+                                    防疫餐盒主食的選擇更多了，在配菜的搭配上也更加的豐盛，讓顧客們攝取足夠的營養增加抵抗力，才能戰勝疫情！<br>
+                                </div>
+                                <div class="more">More</div>
+                            </div>
+                        </a>
+                    </div>
 
                     <div class="swiper-slide card">
                         <a href="https://www.facebook.com/bistro88light/posts/1888956247947197" target="_blank">
@@ -1642,6 +1664,10 @@
             pagination: {
                 el: ".swiper-pagination",
                 dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
         });
     </script>

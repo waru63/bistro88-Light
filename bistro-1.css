@@ -34,6 +34,12 @@ body nav .my-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -71,6 +77,54 @@ body nav .my-container .video iframe {
   right: 0px;
   top: 0px;
   z-index: -99;
+}
+
+body nav .my-container .tagline {
+  position: absolute;
+  top: calc(100vh - 65%);
+  left: calc(100vw - 65%);
+  width: 650px;
+  height: 105px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 10px;
+  text-shadow: 0.1em 0.1em 0.2em #333;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 20px;
+  z-index: 99;
+}
+
+body nav .my-container .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+body nav .my-container .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+body nav .my-container .swiper-container .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body nav .my-container .swiper-container .swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body nav .my-container .swiper-container .swiper-button-next,
+body nav .my-container .swiper-container .swiper-button-prev {
+  color: white;
 }
 
 body nav .my-container .nav-bg {
@@ -531,7 +585,6 @@ body main .events-news .flag-left {
   position: absolute;
   top: 120px;
   left: 530px;
-  z-index: 99;
 }
 
 body main .events-news .title-img {
@@ -555,7 +608,6 @@ body main .events-news .flag-right {
   position: absolute;
   top: 125px;
   right: 540px;
-  z-index: 99;
 }
 
 body main .events-news .swiper-container {
@@ -564,6 +616,22 @@ body main .events-news .swiper-container {
   position: relative;
   top: 100px;
   padding: 20px;
+}
+
+body main .events-news .swiper-container .swiper-button-next {
+  position: absolute;
+  right: 30px;
+  top: 40%;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.3em #333;
+}
+
+body main .events-news .swiper-container .swiper-button-prev {
+  position: absolute;
+  left: 30px;
+  top: 40%;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.3em #333;
 }
 
 body main .events-news .swiper-container .swiper-pagination {
@@ -1143,10 +1211,10 @@ body main .taste .swiper-container .swiper-wrapper .swiper-slide .taste-txt .tit
 
 body main .taste .swiper-container .swiper-wrapper .swiper-slide .taste-txt .name {
   width: 420px;
-  height: 50px;
   font-size: 26px;
-  line-height: 50px;
+  line-height: 30px;
   font-weight: 600;
+  padding: 10px 5px;
   color: black;
   text-align: center;
   border: solid 1px gray;
@@ -1199,6 +1267,8 @@ body main .menu .catalogue:hover {
   cursor: pointer;
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 body main .menu .sketch-left {
