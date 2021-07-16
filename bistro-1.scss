@@ -1123,10 +1123,13 @@ body {
         }
 
         // Menu & Price
-        #menu{
+        .hidden{
             width: 100%;
             height: 20px;
+            position: relative;
+            top: -100px;
             background-color: khaki;
+            z-index: 99;
         }
         .menu {
             width: 100%;
